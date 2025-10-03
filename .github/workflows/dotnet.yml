@@ -22,5 +22,9 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Run webDriver Tests
-      run: dotnet test --no-build --verbosity normal
+    - name: Run WebDriver Tests Project1
+      run: dotnet test TestProject1/TestProject1.csproj --no-build --verbosity normal
+    - name: Run WebDriver Tests Project2
+      run: dotnet test TestProject2/TestProject2.csproj --no-build --verbosity normal
+    - name: Run WebDriver Tests Project3
+      run: dotnet test TestProject3/TestProject3.csproj --no-build --verbosity normal
